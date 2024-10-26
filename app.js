@@ -1,4 +1,10 @@
 document.getElementById("playButton").addEventListener("click", () => {
-    alert("Play a personalized video message here!");
-    // If you have a video file, replace with code to play the video
+    const videoElement = document.getElementById("birthdayVideo");
+    
+    // Display the video if it's hidden
+    if (videoElement.style.display === "none") {
+        videoElement.style.display = "block"; // Make the video visible
+    }
+    
+    videoElement.play(); // Play the video
 });
